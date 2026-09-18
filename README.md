@@ -48,7 +48,7 @@ The dataset used for this project contains real-world B2B sales funnel data from
 
 ## <img src="https://github.com/user-attachments/assets/475cb456-ce8a-42b3-aefa-0ddb508cdf99" width="20" alt="Excel" style="vertical-align: middle;"> Data Extraction & Transformation
 
-To evaluate funnel mechanics, the raw tables `marketing_qualified_leads` and `closed_deals` were queried and joined in PostgreSQL. The objective was to build a single consolidated analytical table containing both top-of-funnel touchpoints and bottom-of-funnel sales metrics.
+
 
 ### 1. Building the Analytical Funnel Table
 ```sql
@@ -76,8 +76,8 @@ LEFT JOIN closed_deals cd
     ON mql.mql_id = cd.mql_id;
 ```
 
-## <img src="https://github.com/user-attachments/assets/76f3d093-4297-42e1-92b4-8897454a3cd3" width="20" alt="Excel" style="vertical-align: middle;"> Data Audit & Validation (Excel & Power Query)
-Before building visual reports, the analytical dataset was imported into Microsoft Excel via Power Query to perform data sanitization, handle string anomalies, and reconcile baseline metrics.
+## <img src="https://github.com/user-attachments/assets/76f3d093-4297-42e1-92b4-8897454a3cd3" width="20" alt="Excel" style="vertical-align: middle;"> Data Audit & Validation 
+
 
 Key Data Cleansing Actions:
 - Date Parsing & Localization: Converted first_contact_date and won_date into proper regional date timestamps.
@@ -88,13 +88,13 @@ Key Data Cleansing Actions:
 
 Mathematical Integrity Audit: Verified with Pivot Tables that the dataset totaled exactly:
 
-- Total Leads: 8,000
+- Total Leads: **8,000**
 
-- Closed Deals: 842
+- Closed Deals: **842**
 
-- Conversion Rate: 10.53%
+- Conversion Rate: **10.53%**
 
-- Average Sales Cycle: 48.4 days
+- Average Sales Cycle: **48.4 days**
 
 <img width="697" height="240" alt="image" src="https://github.com/user-attachments/assets/d4c5a611-25ec-4c96-a932-f98bd1a69a7b" />
 
@@ -105,11 +105,11 @@ Mathematical Integrity Audit: Verified with Pivot Tables that the dataset totale
 
 ### 1. Marketing Performance
 
-- High-Volume Drivers: organic_search (2,296 leads) and paid_search (1,586 leads) generate 48.5% of total pipeline volume.
+- High-Volume Drivers: **organic_search** (2,296 leads) and **paid_search** (1,586 leads) generate 48.5% of total pipeline volume.
 
-- Conversion Leaders: paid_search (12.30%) and organic_search (11.80%) exhibit strong qualification rates, while untracked sources (unknown) convert at 16.65%.
+- Conversion Leaders: **paid_search** (12.30%) and **organic_search** (11.80%) exhibit strong qualification rates, while untracked sources **(unknown)** convert at 16.65%.
 
-- Funnel Leakage: social generated 1,350 leads but converted at just 5.56% (75 closed deals), highlighting poor lead targeting.
+- Funnel Leakage: **social** generated 1,350 leads but converted at just 5.56% (75 closed deals), highlighting poor lead targeting.
 
 <img width="584" height="150" alt="image" src="https://github.com/user-attachments/assets/dbc972a1-5072-4f5b-a55e-6effc87a2e73" />
 
@@ -127,11 +127,11 @@ Mathematical Integrity Audit: Verified with Pivot Tables that the dataset totale
 
 - Market Fit Categories: Closed volume is strongly concentrated in retail and consumer products:
 
-   - home_decor: 105 deals
+   - home_decor: **105 deals**
 
-   - health_beauty: 93 deals
+   - health_beauty: **93 deals**
 
-   - car_accessories: 77 deals
+   - car_accessories: **77 deals**
  
 <img width="472" height="61" alt="image" src="https://github.com/user-attachments/assets/e4357fba-099b-4e30-8392-43afae58dc92" />
 
