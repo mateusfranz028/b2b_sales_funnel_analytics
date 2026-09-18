@@ -99,27 +99,28 @@ Mathematical Integrity Audit: Verified with Pivot Tables that the dataset totale
 
 
 ## <img src="https://github.com/user-attachments/assets/707d9604-b5e0-4bc7-b0c4-a401b6ed001f" width="20" alt="Excel" style="vertical-align: middle;"> Power BI Dashboards & Analysis
-A two-page executive report was developed using a dedicated _Measures table and DAX logic.
 
-1. Marketing Performance (Acquisition & Conversion Efficiency)
-Key Findings:
-High-Volume Drivers: organic_search (2,296 leads) and paid_search (1,586 leads) generate 48.5% of total pipeline volume.
 
-Conversion Leaders: paid_search (12.30%) and organic_search (11.80%) exhibit strong qualification rates, while untracked sources (unknown) convert at 16.65%.
+### 1. Marketing Performance (Acquisition & Conversion Efficiency)
 
-Funnel Leakage: social generated 1,350 leads but converted at just 5.56% (75 closed deals), highlighting poor lead targeting.
+- High-Volume Drivers: organic_search (2,296 leads) and paid_search (1,586 leads) generate 48.5% of total pipeline volume.
+
+- Conversion Leaders: paid_search (12.30%) and organic_search (11.80%) exhibit strong qualification rates, while untracked sources (unknown) convert at 16.65%.
+
+- Funnel Leakage: social generated 1,350 leads but converted at just 5.56% (75 closed deals), highlighting poor lead targeting.
 
 ---
-2. Sales Performance (Commercial Pipeline & Rep Velocity)
-Key Findings:
-Top Revenue Generators: Sales rep 4ef15afb... led commercial performance with 133 deals and R$ 501.8M in declared monthly client revenue, averaging 30.5 days to close.
 
-Deal Size vs. Cycle Length: High-ticket enterprise accounts (de63de0d..., 9749123c...) average ticket sizes above R$ 1.0M and require long sales cycles ranging between 61.7 and 234.0 days, whereas transactional reps close within 17 to 25 days.
+### 2. Sales Performance (Commercial Pipeline & Rep Velocity)
 
-Market Fit Categories: Closed volume is strongly concentrated in retail and consumer products:
+- Top Revenue Generators: Sales rep 4ef15afb... led commercial performance with 133 deals and R$ 501.8M in declared monthly client revenue, averaging 30.5 days to close.
 
-home_decor: 105 deals
+- Deal Size vs. Cycle Length: High-ticket enterprise accounts (de63de0d..., 9749123c...) average ticket sizes above R$ 1.0M and require long sales cycles ranging between 61.7 and 234.0 days, whereas transactional reps close within 17 to 25 days.
 
-health_beauty: 93 deals
+- Market Fit Categories: Closed volume is strongly concentrated in retail and consumer products:
 
-car_accessories: 77 deals
+   - home_decor: 105 deals
+
+   - health_beauty: 93 deals
+
+   - car_accessories: 77 deals
