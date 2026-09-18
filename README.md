@@ -1,15 +1,16 @@
-# b2b_sales_funnel_analytics
-End-to-end B2B sales funnel &amp; pipeline performance analysis using PostgreSQL, Excel, and Power BI.
+#              **B2B Sales Funnel Analytics**
+<img width="1495" height="834" alt="gif dashboard" src="https://github.com/user-attachments/assets/a3065dfb-15ae-48f4-862d-0a2ef3780b78" />
+
 
 ## Introduction
-In high-velocity B2B environments, scaling pipeline revenue requires granular visibility over both acquisition channel quality and sales execution velocity.
+
 
 This project explores the conversion mechanics of sellers registering on a large marketplace ecosystem. By connecting raw lead touchpoints with CRM deal progression data, the objective is to diagnose acquisition bottlenecks, determine sales cycle duration, and measure the revenue impact of consultative sales representatives (SDRs and Closers).
 
 ## Project Files
-Analytical Base Extraction:
-Audit Table:
-Final Dashboard:
+- [Analytical Base Extraction (PostgreSQL File)](analytical_base_extraction.sql)
+- [Audit Table (Excel File)](marketing_funnel_audit.xlsx)
+- [Dashboard (Power BI file)](b2b_sales_pipeline_analysis.pbix)
 
 ## Skills Used
 The following technical skills were utilized across the analysis:
@@ -37,15 +38,15 @@ The following technical skills were utilized across the analysis:
 ## B2B Marketing Funnel Dataset
 The dataset used for this project contains real-world B2B sales funnel data from the Olist Marketplace ecosystem, linking marketing qualified leads to closed deals handled by an Inside Sales team. It provides a foundation for analyzing acquisition channels, sales cycle velocity, and commercial performance. It includes detailed information on:
 
-* 🎯 **MQL Acquisition**
-* 🤝 **Commercial Roles**
-* 🏢 **Business Demographics**
-* ⏱️ **Sales Velocity**
+*  **MQL Acquisition**
+*  **Commercial Roles**
+*  **Business Demographics**
+*  **Sales Velocity**
 
 
 ---
 
-## <img src="https://github.com/user-attachments/assets/475cb456-ce8a-42b3-aefa-0ddb508cdf99" width="20" alt="Excel" style="vertical-align: middle;"> Data Extraction & Transformation (SQL)
+## <img src="https://github.com/user-attachments/assets/475cb456-ce8a-42b3-aefa-0ddb508cdf99" width="20" alt="Excel" style="vertical-align: middle;"> Data Extraction & Transformation
 
 To evaluate funnel mechanics, the raw tables `marketing_qualified_leads` and `closed_deals` were queried and joined in PostgreSQL. The objective was to build a single consolidated analytical table containing both top-of-funnel touchpoints and bottom-of-funnel sales metrics.
 
@@ -95,13 +96,14 @@ Mathematical Integrity Audit: Verified with Pivot Tables that the dataset totale
 
 - Average Sales Cycle: 48.4 days
 
+<img width="697" height="240" alt="image" src="https://github.com/user-attachments/assets/d4c5a611-25ec-4c96-a932-f98bd1a69a7b" />
 
 
 
 ## <img src="https://github.com/user-attachments/assets/707d9604-b5e0-4bc7-b0c4-a401b6ed001f" width="20" alt="Excel" style="vertical-align: middle;"> Power BI Dashboards & Analysis
 
 
-### 1. Marketing Performance (Acquisition & Conversion Efficiency)
+### 1. Marketing Performance
 
 - High-Volume Drivers: organic_search (2,296 leads) and paid_search (1,586 leads) generate 48.5% of total pipeline volume.
 
@@ -109,13 +111,19 @@ Mathematical Integrity Audit: Verified with Pivot Tables that the dataset totale
 
 - Funnel Leakage: social generated 1,350 leads but converted at just 5.56% (75 closed deals), highlighting poor lead targeting.
 
+<img width="584" height="150" alt="image" src="https://github.com/user-attachments/assets/dbc972a1-5072-4f5b-a55e-6effc87a2e73" />
+
 ---
 
-### 2. Sales Performance (Commercial Pipeline & Rep Velocity)
+<img width="579" height="251" alt="image" src="https://github.com/user-attachments/assets/5ab477a5-3f4e-4f79-82d2-939128864cc7" />
+
+---
+
+### 2. Sales Performance
 
 - Top Revenue Generators: Sales rep 4ef15afb... led commercial performance with 133 deals and R$ 501.8M in declared monthly client revenue, averaging 30.5 days to close.
 
-- Deal Size vs. Cycle Length: High-ticket enterprise accounts (de63de0d..., 9749123c...) average ticket sizes above R$ 1.0M and require long sales cycles ranging between 61.7 and 234.0 days, whereas transactional reps close within 17 to 25 days.
+- Deal Size vs. Cycle Length: High-ticket enterprise accounts average ticket sizes above R$ 1.0M and require long sales cycles ranging between 61.7 and 234.0 days, whereas transactional reps close within 17 to 25 days.
 
 - Market Fit Categories: Closed volume is strongly concentrated in retail and consumer products:
 
@@ -124,3 +132,18 @@ Mathematical Integrity Audit: Verified with Pivot Tables that the dataset totale
    - health_beauty: 93 deals
 
    - car_accessories: 77 deals
+ 
+<img width="472" height="61" alt="image" src="https://github.com/user-attachments/assets/e4357fba-099b-4e30-8392-43afae58dc92" />
+
+
+
+## 💡 Conclusions
+
+**1. Reallocate Acquisition Budgets**
+paid_search yields more than double the conversion rate of social. Shifting marketing spend away from social media campaigns and towards high-intent search terms will immediately improve pipeline quality.
+
+**2. Segmented Sales Processes**
+Enterprise leads with high declared revenues demand up to 234 days to convert. Setting a unified quota or SLA across all closers distorts rep performance. High-ticket enterprise prospects should be routed to a dedicated consultative sales track.
+
+**3. Supply Expansion Focus**
+Because home_decor, health_beauty, and car_accessories account for over 32% of all seller conversions, outbound sales motions should prioritize merchant acquisition in these specific retail categories.
